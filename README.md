@@ -4,13 +4,13 @@ The integrators.txt file contains an extensive collection of symplectic partitio
 
 The methods are provided in the (c,d) coefficient format.
 
-The file also contains a number of macros that must be interpreted, particularly for higher-order composition methods. These macros are interpreted by [Zymplectic](https://github.com/Zymplectic/Zymplectic-Project) using up to 512-bit precision, although the corresponding methods can also be found in the referenced literature.
+The file also contains a number of macros that must be interpreted, particularly for higher-order composition methods, coefficient manipulation and comment blocks. These macros are interpreted by [Zymplectic](https://github.com/Zymplectic/Zymplectic-Project) using up to 512-bit precision, although the corresponding methods can also be found in the referenced literature.
 
 integrators.txt is published and maintained as a part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project)
 
 ### Maintenance
 Contributions and modifications may include:
-- New or previously unpublished splitting methods
+- Efficient or novel splitting coefficients
 - Higher-precision coefficients (up to 77 digits)
 - Corrections or improvements to references and metadata
 
