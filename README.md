@@ -2,9 +2,6 @@
 
 The `integrators.txt` file contains an extensive collection of symplectic partitioned Runge–Kutta and Runge–Kutta–Nyström splitting coefficients for the numerical integration of Hamiltonian systems and second-order ordinary differential equations.
 
-
-## Splitting Scheme Convention
-
 For a separable Hamiltonian
 
 $$
@@ -44,15 +41,10 @@ $$
 Proper implementation may additionally require consideration of:
 
 * the non-interchangeable role of drift and kick operators in RKN formulations,
-* methods with a “first same as last” (FSAL) structure when $d_1=0$ or $d_s=0$,
+* methods with a “first same as last” (FSAL) structure when $d_s=0$,
 * explicit time dependence in nonautonomous systems,
 * compensated summation,
 * alternative formulations such as extended phase-space methods for nonseparable Hamiltonian systems or applications for constrained Hamiltonian systems.
-
-
-
-
-
 
 The file also includes a number of macros that must be interpreted, particularly for higher-order composition methods, coefficient manipulation and comment blocks. These macros are interpreted by [Zymplectic](https://github.com/Zymplectic/Zymplectic-Project) using up to 512-bit precision, although the corresponding methods can also be found in the referenced literature.
 
@@ -64,7 +56,7 @@ The file also includes a number of macros that must be interpreted, particularly
 
 `integrators.txt` is published and maintained as part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project)
 
-### References
+## References
 
 1. Hairer, E., Lubich, C., & Wanner, G. (2006). *Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations* (2nd ed.). Springer Series in Computational Mathematics, Vol. 31. Springer. [https://doi.org/10.1007/3-540-30666-8](https://doi.org/10.1007/3-540-30666-8)
 
