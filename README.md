@@ -73,8 +73,4 @@ Contributions and modifications may include:
 
 28. Laskar, J., & Robutel, P. (2001). High order symplectic integrators for perturbed Hamiltonian systems. *Celestial Mechanics and Dynamical Astronomy, 80*(1–2), 39–62. [https://doi.org/10.1023/A:1012098603882](https://doi.org/10.1023/A:1012098603882)
 
-27. Tsitouras, Ch. (1999). A tenth order symplectic Runge–Kutta–Nyström method. *Celestial Mechanics and Dynamical Astronomy, 74*, 223–230. [https://doi.org/10.1023/A:1008346516048](https://doi.org/10.1023/A:1008346516048)
-
-28. Laskar, J., & Robutel, P. (2001). High order symplectic integrators for perturbed Hamiltonian systems. *Celestial Mechanics and Dynamical Astronomy, 80*(1–2), 39–62. [https://doi.org/10.1023/A:1012098603882](https://doi.org/10.1023/A:1012098603882)
-
 [1]: https://cir.nii.ac.jp/crid/1363107369548511232 "Geometric Numerical Integration | CiNii Research"
