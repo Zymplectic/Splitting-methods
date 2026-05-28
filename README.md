@@ -1,19 +1,68 @@
 # Splitting methods
 
-The integrators.txt file contains an extensive collection of symplectic partitioned Runge–Kutta and Runge–Kutta–Nyström splitting coefficients for the numerical integration of Hamiltonian systems and second-order ordinary differential equations.
+The `integrators.txt` file contains an extensive collection of symplectic partitioned Runge–Kutta and Runge–Kutta–Nyström splitting coefficients for the numerical integration of Hamiltonian systems and second-order ordinary differential equations.
 
-The methods are provided in the (c,d) coefficient format.
 
-The file also contains a number of macros that must be interpreted, particularly for higher-order composition methods, coefficient manipulation and comment blocks. These macros are interpreted by [Zymplectic](https://github.com/Zymplectic/Zymplectic-Project) using up to 512-bit precision, although the corresponding methods can also be found in the referenced literature.
+## Splitting Scheme Convention
 
-integrators.txt is published and maintained as a part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project)
+For a separable Hamiltonian
 
-### Maintenance
-Contributions and modifications may include:
-- Efficient or novel splitting coefficients
-- Higher-precision coefficients (up to 77 digits)
-- Corrections or improvements to references and metadata
+$$
+H(q,p)=T(p)+V(q),
+$$
 
+a splitting scheme may be written as
+
+$$
+\Phi_h = e^{h c_1 L_V} e^{h d_1 L_T} e^{h c_2 L_V} e^{h d_2 L_T} \cdots e^{h c_s L_V} e^{h d_s L_T}.
+$$
+
+The corresponding integration algorithm is
+
+$$
+\begin{aligned}
+(q_0,p_0) &\gets (q,p), \\
+\text{for } i=1,\dots,s: \\
+p_i &\gets p_{i-1} - h c_i \nabla V(q_{i-1}), \\
+q_i &\gets q_{i-1} + h d_i \nabla T(p_i).
+\end{aligned}
+$$
+
+For separable Hamiltonian systems, the roles of (T) and (V) may often be exchanged in SPRK formulations by reversing the drift–kick ordering. The `integrators.txt` naming convention retains $c_1$ as the leading coefficient regardless of interpretation.
+
+An equivalent ordering is therefore
+
+$$
+\begin{aligned}
+(q_0,p_0) &\gets (q,p), \\
+\text{for } i=1,\dots,s: \\
+q_i &\gets q_{i-1} + h c_i \nabla T(p_{i-1}), \\
+p_i &\gets p_{i-1} - h d_i \nabla V(q_i).
+\end{aligned}
+$$
+
+Proper implementation may additionally require consideration of:
+
+* the non-interchangeable role of drift and kick operators in RKN formulations,
+* methods with a “first same as last” (FSAL) structure when $d_1=0$ or $d_s=0$,
+* explicit time dependence in nonautonomous systems,
+* compensated summation,
+* alternative formulations such as extended phase-space methods for nonseparable Hamiltonian systems or applications for constrained Hamiltonian systems.
+
+
+
+
+
+
+The file also includes a number of macros that must be interpreted, particularly for higher-order composition methods, coefficient manipulation and comment blocks. These macros are interpreted by [Zymplectic](https://github.com/Zymplectic/Zymplectic-Project) using up to 512-bit precision, although the corresponding methods can also be found in the referenced literature.
+
+:exclamation: The references listed below may not exactly match the representations used in `integrators.txt`:
+- The naming conventions used for different methods may differ from those found in the literature. Many original authors have not assigned explicit names to their methods. Suggestions for renaming are welcome.
+- Coefficients are often expressed in cumulative form in the literature. They are consistently presented as $(c,d)$ in `integrators.txt`
+- Coefficients published in the literature occasionally contain only a limited number of accurate digits. These methods have been revisited by Zymplectic, with coefficients extended to up to 77 correctly rounded digits.
+- Certain coefficients are presented algebraically in the literature but are represented numerically in `integrators.txt` with up to 77 digits of precision.
+
+`integrators.txt` is published and maintained as part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project)
 
 ### References
 
