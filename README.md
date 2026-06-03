@@ -58,9 +58,9 @@ The file also includes a number of macros that must be interpreted, particularly
 
 ## References
 
-1. Hairer, E., Lubich, C., & Wanner, G. (2006). *Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations* (2nd ed.). Springer Series in Computational Mathematics, Vol. 31. Springer. [https://doi.org/10.1007/3-540-30666-8](https://doi.org/10.1007/3-540-30666-8)
+1. Hairer, E., Lubich, C., & Wanner, G. (2002). Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations. Springer Series in Computational Mathematics, Vol. 31. Springer. [https://doi.org/10.1007/978-3-662-05018-7](https://doi.org/10.1007/978-3-662-05018-7)
 
-2. Hairer, E., Lubich, C., & Wanner, G. (2006). *Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations* (2nd ed.). Springer Series in Computational Mathematics, Vol. 31. Springer. [https://doi.org/10.1007/978-3-662-05018-7](https://doi.org/10.1007/978-3-662-05018-7)
+2. Sun, Z., Yang, W., & Zhang, D. H. (2012). 3D time-dependent wave-packet approach in hyperspherical coordinates for the H + O₂ reaction on the CHIPR and DMBE IV potential energy surfaces. Physical Chemistry Chemical Physics, 14, 1827–1835. [https://doi.org/10.1039/C1CP22790D](https://doi.org/10.1039/C1CP22790D)
 
 3. McLachlan, R. I. (1995). Composition methods in the presence of small parameters. BIT Numerical Mathematics, 35(2), 258–268. [https://doi.org/10.1007/BF01737165](https://doi.org/10.1007/BF01737165)
 
