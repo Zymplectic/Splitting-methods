@@ -1,14 +1,14 @@
 /* Splitting coefficient library. Contains mainly of symplectic partioned Runge-Kutta (SPRK) and Runge-Kutta-Nyström (RKN) coefficients
 Method declaration format: #Method#Name#Description
 Method options 0: Evaluate V gradient first, 1: Evaluate T gradient first or 2: both implementations
-FSAL implementation is invoked by excluding the last zero-valued c coefficient. The last c coefficient is zero for all symmetric methods
-Coefficients may be assigned like c8 = c1, but arithmetics are not supported
+FSAL implementation is invoked by excluding the last zero-valued d coefficient. The last d coefficient is zero for all symmetric methods
+Coefficients may be assigned like "c8 = c1", but arithmetics are not supported
 
 Supported macros:
 (macro 0):          provided only n d-coefficients, n+1 c-coefficients will be calculated with per-d leapfrog compositions
 (macro 1): _C		fills the remaining c and d coefficients given the first s/2+1 d-coefficients of a symmetric integrator
 (macro 2): _S		symmetrizes non-symmetric integrators. Increases order of odd order integrators
-(macro 3): _A		alternating integrator. For separable systems, reduces cost of any integrator with same number of c and d coefficients and increases order by 1 of odd order SPRK integrators.
+(macro 3): _A		alternating integrator. For separable systems, reduces cost of any integrator with same number of c and d coefficients and increases order by 1 of odd order SPRK integrators. 
 (macro 4): _yX		increases order of symmetric integrators from X to X+2, or orders of non-symmetric integrators from X to X+1
 (macro 5): _yX_Y	same as macro X when Y = 2 which is a 'forward-backward-forward' structure. Larger A values increases the stage count and adds more forward steps for greater robustness, e.g. Y = 4 is a 'foward-forward-backward-forward-forward' structure)
 (macro 6): _eX		increases SPRK order of symmetric coefficients from X to X+4, X = {2,4,6,8,10}
