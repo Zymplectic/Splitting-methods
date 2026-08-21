@@ -92,7 +92,7 @@ The file also includes a number of macros that must be interpreted, particularly
 
 17. Sofroniou, M., & Spaletta, G. (2005). Derivation of symmetric composition constants for symmetric integrators. Optimization Methods and Software, 20(4–5), 597–613. [https://doi.org/10.1080/10556780500140664](https://doi.org/10.1080/10556780500140664)
 
-18. Bandrauk, A. D., & Shen, H. (1994). High-order split-step exponential methods for solving coupled nonlinear Schrödinger equations. Journal of Physics A: Mathematical and General, 27(21), 7147–7155. [https://doi.org/10.1088/0305-4470/27/21/030](https://doi.org/10.1088/0305-4470/27/21/030)
+18. Tselios, K., & Simos, T. E. (2013). Optimized Fifth Order Symplectic Integrators for Orbital Problems. Revista Mexicana de Astronomía y Astrofísica, 49(1), 11–24.
 
 19. McLachlan, R. I., & Atela, P. (1992). The accuracy of symplectic integrators. Nonlinearity, 5(2), 541–562. [https://doi.org/10.1088/0951-7715/5/2/011](https://doi.org/10.1088/0951-7715/5/2/011)
 
