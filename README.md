@@ -56,6 +56,8 @@ The file also includes a number of macros that must be interpreted, particularly
 
 `integrators.txt` is published and maintained as part of the [Zymplectic project](https://github.com/Zymplectic/Zymplectic-Project)
 
+Consider referencing in public projects the original literature of the splitting methods :hugs:
+
 ## References
 
 1. Hairer, E., Lubich, C., & Wanner, G. (2002). Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations. Springer Series in Computational Mathematics, Vol. 31. Springer. [https://doi.org/10.1007/978-3-662-05018-7](https://doi.org/10.1007/978-3-662-05018-7)
