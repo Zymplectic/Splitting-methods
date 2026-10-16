@@ -13,13 +13,13 @@ a splitting scheme may be written as
 
 The corresponding integration algorithm is
 
-&emsp; $`\displaystyle \begin{aligned} &(q_0,p_0) = (q,p) \\ &\text{for } i=1,\ldots,s: \\ &\qquad p_i = p_{i-1} - h c_i \nabla V(q_{i-1}) \\ &\qquad q_i = q_{i-1} + h d_i \nabla T(p_i) \end{aligned}`$
+&emsp; $`\displaystyle \begin{aligned} &\text{for } i=1,\ldots,s: \\ &\qquad p_i = p_{i-1} - h c_i \nabla V(q_{i-1}) \\ &\qquad q_i = q_{i-1} + h d_i \nabla T(p_i) \end{aligned}`$
 
 For separable Hamiltonian systems, the roles of $T$ and $V$ may often be exchanged in SPRK formulations by reversing the drift–kick ordering. The `integrators.txt` naming convention retains $c_1$ as the leading coefficient regardless of interpretation.
 
 An equivalent ordering is therefore
 
-&emsp; $`\displaystyle \begin{aligned} &(q_0,p_0) = (q,p) \\ &\text{for } i=1,\ldots,s: \\ &\qquad q_i = q_{i-1} + h c_i \nabla T(p_{i-1}) \\ &\qquad p_i = p_{i-1} - h d_i \nabla V(q_i) \end{aligned}`$
+&emsp; $`\displaystyle \begin{aligned} &\text{for } i=1,\ldots,s: \\ &\qquad q_i = q_{i-1} + h c_i \nabla T(p_{i-1}) \\ &\qquad p_i = p_{i-1} - h d_i \nabla V(q_i) \end{aligned}`$
 
 Proper implementation may additionally require consideration of:
 
