@@ -64,7 +64,7 @@ Consider referencing in public projects the original literature of the splitting
 
 10. Okunbor, D. I., & Skeel, R. D. (1994). Canonical Runge–Kutta–Nyström methods of orders five and six. Journal of Computational and Applied Mathematics, 51(3), 375–382. [https://doi.org/10.1016/0377-0427(92)00119-T](https://doi.org/10.1016/0377-0427(92)00119-T)
 
-11. Blanes, S., Casas, F., Escorihuela-Tomàs, A., & Ros, J. (2022). Efficient symplectic splitting methods for near-harmonic separable Hamiltonian systems. *Applied Numerical Mathematics, 182*, 210–230. [https://doi.org/10.1016/j.apnum.2022.07.010](https://doi.org/10.1016/j.apnum.2022.07.010)
+11. Blanes, S., Casas, F., Escorihuela-Tomàs, A., & Ros, J. (2022). Runge-Kutta-Nystrom symplectic splitting methods of order 8. *Applied Numerical Mathematics, 182*, 210–230. [https://doi.org/10.1016/j.apnum.2022.07.010](https://doi.org/10.1016/j.apnum.2022.07.010)
 
 12. Monovasilis, T., & Simos, T. E. (2007). Symplectic methods for the numerical integration of the Schrödinger equation. Computational Materials Science, 38(3), 526–532. [https://doi.org/10.1016/j.commatsci.2005.09.011](https://doi.org/10.1016/j.commatsci.2005.09.011)
 
